@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    color: #fff;
+    background-color:  hsl(216, 12%, 8%);
+}
+
+.container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: hsl(213, 19%, 18%);
+}
+
+.star, .circle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: hsla(0, 0%, 100%, 0.085);
+}
+
+.title {
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.descr {
+    margin-top: 20px;
+    color: hsl(217, 12%, 63%);
+}
+
+
+
+.rate-panel {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 30px 0;
+}
+
+.rate-number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: hsl(217, 12%, 63%); 
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.rate-number:hover {
+    color: #fff;
+    background-color: hsl(217, 12%, 63%);
+}
+
+.rate-number.active {
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+}
+
+.send-btn {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 50px;
+    vertical-align: middle;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: hsl(25, 97%, 53%);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.send-btn:hover {
+    color: hsl(25, 97%, 53%);
+    background-color: #fff;
+}
+
+.disabled {
+    pointer-events: none;
+    opacity: 0.6;
+}
+
+/* screen-two */
+
+.first-screen.none, .second-screen.none {
+    display: none;
+}
+
+.loading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.selected {
+    width: 180px;
+    margin: 20px auto 0 auto;
+    padding: 5px;
+    border-radius: 20px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: hsla(0, 0%, 100%, 0.085);
+    color: hsl(25, 80%, 40%);
+}
+
+
+.second-title {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.screen-two {
+    margin-top: 5px;
+    text-align: center;
+}
+
+
+@media(max-width: 425px){
+    .container {
+        margin: 0 15px;
+        padding: 15px;
+    }
+}
+
+
+@media(max-width: 340px){
+    .circle {
+        width: 40px;
+        height: 40px;
+    }
+}
